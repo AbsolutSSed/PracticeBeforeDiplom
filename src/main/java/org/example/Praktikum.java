@@ -2,7 +2,7 @@ package org.example;
 
 public class Praktikum {
 
-        public void main(String[] args) {
+        public static void main(String[] args) {
             // Пример строки с именем и фамилией
             String testName = "Тимоти Шаламе";
 
@@ -14,4 +14,3 @@ public class Praktikum {
             System.out.println("Можно ли напечатать на карте: " + isValid);
         }
     }
-}

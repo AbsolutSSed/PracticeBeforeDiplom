@@ -12,13 +12,13 @@ import static org.junit.Assert.*;
 
         @Test
         public void testNameTooShort() {
-            Account account = new Account("И И");
+            Account account = new Account("B");
             assertFalse(account.checkNameToEmboss());
         }
 
         @Test
         public void testNameTooLong() {
-            Account account = new Account("Александра Вишневская-Петрова");
+            Account account = new Account("Александра Вишневская-ПетроваFFFFFFFF");
             assertFalse(account.checkNameToEmboss());
         }
 
@@ -66,7 +66,7 @@ import static org.junit.Assert.*;
 
         @Test
         public void testValidNameWithMaxLength() {
-            Account account = new Account("Алексей Иванович Петров");
+            Account account = new Account("Андрей Игорев");
             assertTrue(account.checkNameToEmboss());
         }
     }
